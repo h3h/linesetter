@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'paragraphs'
+
+text = STDIN.read.chomp
+puts Paragraphs.format(text)
