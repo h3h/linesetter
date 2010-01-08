@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'linesetter'
+
+text = STDIN.read.chomp
+puts Linesetter.format(text)

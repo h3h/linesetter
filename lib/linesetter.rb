@@ -1,10 +1,10 @@
 # encoding: UTF-8
 
-# Paragraph formatter.
+# Linesetter is a paragraph (re)formatter for text editing.
 # 2010-01-03 / Brad Fults <bfults@gmail.com>
 # See LICENSE for license info.
 
-module Paragraphs
+module Linesetter
   BOUNDARY = 78
 
   def self.format(text)

@@ -1,10 +1,10 @@
 $LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'
-require 'paragraphs'
+require 'linesetter'
 
-describe Paragraphs do
+describe Linesetter do
 
   it "should only trim trailing whitespace on a single-line input" do
-    Paragraphs.format(" test ").should == " test"
+    Linesetter.format(" test ").should == " test"
   end
 
   it "should make a single line of > 78 chars into 2 lines" do
@@ -12,7 +12,7 @@ describe Paragraphs do
       "perfect Union, establish Justice,"
     two_lines = "We the People of the United States, in Order to form a more " +
       "perfect Union,\nestablish Justice,"
-    Paragraphs.format(long_line).should == two_lines
+    Linesetter.format(long_line).should == two_lines
   end
 
   it "should make a single line of > 156 chars into 3 lines" do
@@ -22,7 +22,7 @@ describe Paragraphs do
     two_lines = "We the People of the United States, in Order to form a more " +
     "perfect Union,\nestablish Justice, insure domestic Tranquility, provide " +
     "for the common\ndefence,"
-    Paragraphs.format(long_line).should == two_lines
+    Linesetter.format(long_line).should == two_lines
   end
 
   it "should make many lines of > 78 chars into many lines" do
@@ -36,7 +36,7 @@ describe Paragraphs do
     "for the common\ndefence, promote the general Welfare, and secure the "    +
     "Blessings of Liberty to\nourselves and our Posterity, do ordain and "     +
     "establish this Constitution for the\nUnited States of America."
-    Paragraphs.format(long_line).should == many_lines
+    Linesetter.format(long_line).should == many_lines
   end
 
   it "should make many lines of > 78 chars with indentation into many lines" do
@@ -52,7 +52,7 @@ describe Paragraphs do
     "Welfare, and secure the Blessings of Liberty\n    to ourselves and our "  +
     "Posterity, do ordain and establish this Constitution\n    for the "       +
     "United States of America."
-    Paragraphs.format(long_line).should == many_lines
+    Linesetter.format(long_line).should == many_lines
   end
 
 end
