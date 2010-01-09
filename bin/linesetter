@@ -2,5 +2,5 @@
 
 require 'linesetter'
 
-text = STDIN.read.chomp
+text = $stdin.read.chomp
 puts Linesetter.format(text)
