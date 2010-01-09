@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>bundleUUID</key>
+	<string>DA8BC897-04C8-49E0-8B2F-441FF360034F</string>
+	<key>command</key>
+	<string>linesetter</string>
+	<key>fallbackInput</key>
+	<string>none</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>@+</string>
+	<key>name</key>
+	<string>Reformat Paragraph with Linesetter (⌘+)</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>uuid</key>
+	<string>FABD348C-2554-4501-ABE8-43655F0EB7B2</string>
+</dict>
+</plist>
